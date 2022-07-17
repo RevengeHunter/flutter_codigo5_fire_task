@@ -82,9 +82,8 @@ class _FormTaskWidgetState extends State<FormTaskWidget> {
       print(newTaskModel.toJson());
 
       _taskCollection
-          .add({
-        newTaskModel.toJson()
-      },).then((value) {})
+          .add(newTaskModel.toJson()
+      ,).then((value) {})
           .whenComplete(() {
         Navigator.pop(context);
       },).catchError((error){
